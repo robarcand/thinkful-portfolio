@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "MonumentGroteskRegular";
+    src: url("./MonumentGrotesk/MonumentGrotesk-Regular.otf");
+}
+
+@font-face {
+    font-family: "JHATimesRegular";
+    src: url("./JHATimesNow/TimesNowSemiLight.otf");
+}
+
+body {
+    font-family: "JHATimesRegular";
+    font-size: 1.5rem;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body a {
+    font-family: "MonumentGroteskRegular";
+    color: #f00;
+    text-decoration: none;
+}
+
+main {
+    /* max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+section {
+    height: 100vh;
+    width: 85vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.hero1 {
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.hero1 img {
+    width: 150px;
+    float: right;
+
+    padding-top: 30px;
+}
+
+.hero1inner, .hero2inner, .hero3inner, .hero4inner {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero2 {
+    background-color: #00f;
+}
+
+.hero3 {
+    background-color: #0f0;
+}
+
+.hero4 {
+    background-color: #fff;
+}
+
+
+@media (min-width: 500px) {
+
+    body {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 40px;
+
+        height: 100vh;
+        width: 80vw;
+    }
+
+
+    .hero1 img {
+        width: 250px;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    section {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        font-size: 2.5rem;
+    }
+
+    section {
+        width: 93vw;
+    }
+
+    .hero1 img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    body {
+        font-size: 3rem;
+    }
+
+    .hero1 img {
+        padding-top: 50px;
+        width: 400px;
+    }
+  
+}
